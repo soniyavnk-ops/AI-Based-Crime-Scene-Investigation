@@ -1,0 +1,54 @@
+/* Reset default margin */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Background Image */
+body {
+    height: 100vh;
+    background: url('../images/Screenshot 2026-02-09 123735.png') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form Container */
+.container {
+    background: rgba(6, 6, 6, 0.804);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    width: 350px;
+}
+
+/* Heading */
+.container h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Input Fields */
+input[type="file"],
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+/* Button */
+input[type="submit"] {
+    background-color: #0c0c0c;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: #010709;
+}

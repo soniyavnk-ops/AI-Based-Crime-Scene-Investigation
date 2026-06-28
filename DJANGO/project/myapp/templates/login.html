@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'css/style1.css' %}">
+
+</head>
+<body class="auth-body">
+<div  class="auth-container">
+    <h2 style="color:black">Login</h2>
+    {% if error %}
+    <p style="color:#ff0000;">{{ error }}</p>
+    {% endif %}
+
+    <form method="POST">
+        {% csrf_token %}
+        
+        <label style=color:white>email</label>
+        <input type="text" name="email" placeholder="email" required ><br><br>
+        <label style=color:azure>password</label>
+        <input type="password" name="password" placeholder="password" required><br><br>
+        <button type="submit">Login</button>
+    </form>
+
+</div>    
+</body>
+</html>
